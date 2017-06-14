@@ -1,4 +1,4 @@
-app.controller("stories", ["$scope", function($scope) {
+app.controller("stories", ["$scope", "$timeout", function($scope, $timeout) {
    $scope.articles = [ 
       {
          title: "UPDATE 26/04/2017",
@@ -114,6 +114,13 @@ app.controller("stories", ["$scope", function($scope) {
 
    $scope.loadMore = function() {
       $scope.maxResults += 5;
-      $scope.$apply();
+      $timeout(function () {
+         $scope.$apply();
+      }, 300);
+   }
+
+   $scope.isActive = false;
+   $scope.activate = function() {
+      $scope.isActive = !$scope.isActive;
    }
 }]);

@@ -33,6 +33,10 @@ header h1 a:hover, header h1 a:link, header h1 a:visited {
    text-decoration: none;
 }
 
+#posts-header {
+   padding-top: 75px;
+}
+
 .jumbotron {
    display: flex;
    align-items: center;
@@ -179,6 +183,7 @@ nav {
    text-align: center;
    background-color: black;
    border-radius: 8px;
+   margin-bottom: 35px;
 }
 
 #navbar p {
@@ -231,7 +236,6 @@ nav a:hover, #navbar a:hover {
 
 #content {
    font-family: Helvetica, Arial, sans-serif;
-   margin-top: 35px;
    margin-bottom: 20px;
 }
 

@@ -1,1 +1,1 @@
-var app = angular.module("TCT", ["ngSanitize", "ngAnimate", "infinite-scroll"]);
+var app = angular.module("TCT", ["ngSanitize", "ngAnimate", "infinite-scroll", "ngRoute"]);
