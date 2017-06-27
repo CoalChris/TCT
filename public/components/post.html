@@ -1,0 +1,37 @@
+<header class="container-fluid">
+   <div class="row">
+      <h1 scroll-to="#fb-root" class="col-sm-2"><a href="/">TCT</a></h1>
+      <nav class="col-sm-12">
+         <a href="https://www.facebook.com/coal.chris" class="col-sm-4">Facebook</a>
+         <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" class="col-sm-4">YouTube</a>
+         <a href="/posts" scroll-to="#fb-root" class="col-sm-4">Posts</a>
+      </nav>
+   </div>
+</header>
+<div id="posts-header"></div>
+<section class="container" id="content">
+   <div id="main">
+      <div id="scroll-to"></div>
+      <article ng-repeat="article in articles | filter: filterId">
+         <h1 class="title">{{ article.title }}</h2>
+         <p class="date">{{ article.date }}</p>
+         <img class="image" ng-src="{{ article.image }}">
+         <p class="blurb">{{ article.blurb }}</p>
+         <p class="text" ng-bind-html="article.text"/>
+         <div class="row text-right">
+            <h4><p></p>SHARE</h4>
+            <img class="fb-share" src="../img/facebook-icon.png" socialshare socialshare-provider="facebook" socialshare-url="https://thechristimes.herokuapp.com/posts/{{ article.id }}">
+            <img class="twitter-share" src="../img/twitter-icon.png" socialshare socialshare-provider="twitter" socialshare-url="https://thechristimes.herokuapp.com/posts/{{ article.id }}">
+            <img class="google-share" src="../img/google-icon.png" socialshare socialshare-provider="google" socialshare-url="https://thechristimes.herokuapp.com/posts/{{ article.id }}">
+            <img class="pinterest-share" src="../img/pinterest-icon.png" socialshare socialshare-provider="pinterest" socialshare-url="https://thechristimes.herokuapp.com/posts/{{ article.id }}">
+         </div>
+      </article>
+   </div>
+   <div class="sidebar">
+      <div id="suggestions">
+         <p>
+            Place suggested posts here!
+         </p>
+      </div>
+   </div>
+</section>

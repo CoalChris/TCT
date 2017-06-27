@@ -4,6 +4,7 @@
   "description": "Website for Coal Chris, running on AngularJS and Express.",
   "main": "server.js",
   "dependencies": {
+    "angular-socialshare": "^2.3.11",
     "express": "^4.15.3"
   },
   "devDependencies": {},

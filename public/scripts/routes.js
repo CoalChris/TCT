@@ -10,6 +10,12 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
       .when('/posts', {
          templateUrl: '../components/posts.html',
          controller: 'stories'
+      })
+
+      // specific post
+      .when('/posts/:id', {
+         templateUrl: '../components/post.html',
+         controller: 'stories'
       });
 
       // Remember routing history
