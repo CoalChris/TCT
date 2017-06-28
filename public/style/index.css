@@ -33,10 +33,6 @@ header h1 a:hover, header h1 a:link, header h1 a:visited {
    text-decoration: none;
 }
 
-#meta-image {
-   display: none;
-}
-
 #posts-header {
    padding-top: 75px;
 }

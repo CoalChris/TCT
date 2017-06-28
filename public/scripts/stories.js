@@ -106,7 +106,13 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
    $scope.maxResults = 5;
 
    $scope.filterType = function(story) {
-      $window.document.title = "The Chris Times";
+      //$window.document.title = "The Chris Times";
+      $scope.$parent.seo = {
+         pageType: "website",
+         pageTitle: "The Chris Times",
+         pageDescription: "A glimpse into the life of Coal Chris",
+         pageImage: "img/profile.jpg"
+      };
       if ($scope.type == "all") {
          return true;
       } else {
@@ -119,7 +125,13 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
 
    $scope.filterId = function(story) {
       if (story.id == $routeParams.id) {
-         $window.document.title = story.title;
+         //$window.document.title = story.title;
+         $scope.$parent.seo = {
+            pageType: "article",
+            pageTitle: story.title,
+            pageDescription: story.blurb,
+            pageImage: story.image
+         };
          return true;
       } else {
          return false;

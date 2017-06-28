@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="TCT">
+<html ng-app="TCT" ng-controller="metaController">
 <head>
    <base href="/">
-   <title>The Chris Times</title>
+   <title>{{ seo.pageTitle }}</title>
    <meta charset="utf-8"/>
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta property="og:image" content="http://i.imgur.com/MXuwqLg.jpg?fb" />
+   <meta property="og:type" content="{{ seo.pageType }}" />
+   <meta property="og:title" content="{{ seo.pageTitle }}" />
+   <meta property="og:description" content="{{ seo.pageDescription }}" />
+   <meta property="og:image" content="{{ seo.pageImage }}" />
    <link rel="stylesheet" href="style/bootstrap.min.css">
    <link rel='stylesheet' type='text/css' href="style/roboto.css">
    <link rel='stylesheet' type='text/css' href="style/berkshire-swash.css">
@@ -26,6 +29,7 @@
    <script type="text/javascript" src="scripts/stories.js"></script>
    <script type="text/javascript" src="scripts/scroll.js"></script>
    <script type="text/javascript" src="scripts/routes.js"></script>
+   <script type="text/javascript" src="scripts/meta.js"></script>
    <script type="text/javascript" src="scripts/angular-socialshare.js"></script>
 </head>
    <body>
@@ -40,7 +44,6 @@
             fjs.parentNode.insertBefore(js, fjs);
          } (document, 'script', 'facebook-jssdk'));
       </script>
-      <img id="meta-image" src="img/profile.jpg">
 
       <ng-view></ng-view>
 

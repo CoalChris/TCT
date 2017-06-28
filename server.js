@@ -5,6 +5,7 @@ const app = express();
 
 // define the folder that will be used for static assets
 app.use(express.static(__dirname + '/public'));
+app.use(require('prerender-node').set('prerenderToken', 'C300lapyzf9wBOotNjzQ'));
 
 // universal routing
 app.get('*', (req, res) => { 
