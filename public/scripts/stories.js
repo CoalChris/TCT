@@ -108,6 +108,7 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
    $scope.filterType = function(story) {
       //$window.document.title = "The Chris Times";
       $scope.$parent.seo = {
+         pageUrl: "https://thechristimes.herokuapp.com/",
          pageType: "website",
          pageTitle: "The Chris Times",
          pageDescription: "A glimpse into the life of Coal Chris",
@@ -127,6 +128,7 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
       if (story.id == $routeParams.id) {
          //$window.document.title = story.title;
          $scope.$parent.seo = {
+            pageUrl: "https://thechristimes.herokuapp.com/posts/" + story.id, 
             pageType: "article",
             pageTitle: story.title,
             pageDescription: story.blurb,
