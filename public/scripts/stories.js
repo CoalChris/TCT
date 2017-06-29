@@ -112,7 +112,7 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
          pageType: "website",
          pageTitle: "The Chris Times",
          pageDescription: "A glimpse into the life of Coal Chris",
-         pageImage: "img/profile.jpg"
+         pageImage: "https://thechristimes.herokuapp.com/img/profile.jpg"
       };
       if ($scope.type == "all") {
          return true;
@@ -127,12 +127,13 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
    $scope.filterId = function(story) {
       if (story.id == $routeParams.id) {
          //$window.document.title = story.title;
+         var imagePath = story.image.substr(3);
          $scope.$parent.seo = {
             pageUrl: "https://thechristimes.herokuapp.com/posts/" + story.id, 
             pageType: "article",
             pageTitle: story.title,
             pageDescription: story.blurb,
-            pageImage: story.image
+            pageImage: "https://thechristimes.herokuapp.com/" + imagePath
          };
          return true;
       } else {
