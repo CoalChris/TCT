@@ -7,10 +7,13 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(require('prerender-node').set('prerenderToken', 'C300lapyzf9wBOotNjzQ'));
 
-// share redirect
-app.get('/share', (req, res) => { 
-   res.sendFile(__dirname + '/public/redirect.html');
-}); 
+app.use(function(req, res, next) {
+      var userAgent = req.headers['user-agent'];
+
+      if (userAgent.indexOf('facebookexternalhit') < 0) {
+         res.redirect(req.path);
+      }
+});
 
 // universal routing
 app.get('*', (req, res) => { 
