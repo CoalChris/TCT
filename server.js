@@ -7,6 +7,11 @@ const app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(require('prerender-node').set('prerenderToken', 'C300lapyzf9wBOotNjzQ'));
 
+// share redirect
+app.get('/share', (req, res) => { 
+   res.sendFile(__dirname + '/public/redirect.html');
+}); 
+
 // universal routing
 app.get('*', (req, res) => { 
    res.sendFile(__dirname + '/public/index.html');
