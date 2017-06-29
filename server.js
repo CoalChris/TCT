@@ -8,18 +8,8 @@ app.use(express.static(__dirname + '/public'));
 app.use(require('prerender-node').set('prerenderToken', 'C300lapyzf9wBOotNjzQ'));
 
 // universal routing
-app.get('*', isBot, (req, res, next) => { 
+app.get('*', (req, res, next) => { 
    res.sendFile(__dirname + '/public/index.html');
-});
-
-function isBot(req, res, next) {
-      var userAgent = req.get('User-Agent');
-
-      if (userAgent.search('facebookexternalhit') == -1) {
-         res.redirect(req.path);
-      } else {
-         return next();
-      }
 });
 
 // start the server
