@@ -5,6 +5,10 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
          templateUrl: '../components/home.html',
          controller: 'stories'
       })
+      .when('/home', {
+         templateUrl: '../components/home.html',
+         controller: 'stories'
+      })
 
       // posts
       .when('/posts', {
