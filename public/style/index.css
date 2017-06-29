@@ -218,7 +218,7 @@ nav a, #navbar a {
    color: gray;
 }
 
-nav a:hover, #navbar a:hover {
+nav a:hover, #navbar a:hover, nav a:link, #navbar a:link, nav a:visited, #navbar a:visited {
    color: gray;
    text-decoration: none;
 }
