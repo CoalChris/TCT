@@ -28,8 +28,12 @@ header h1 a {
    color: white;
 }
 
-header h1 a:hover, header h1 a:link, header h1 a:visited {
-   color: white;
+header h1 a:hover {
+   color: gray;
+   text-decoration: none;
+}
+
+header h1 a:visited {
    text-decoration: none;
 }
 
@@ -37,7 +41,7 @@ header h1 a:hover, header h1 a:link, header h1 a:visited {
    padding-top: 75px;
 }
 
-#posts {
+#posts, #tags {
    color: gray;
    padding-left: 2rem;
 }
@@ -199,6 +203,21 @@ nav {
    color: white;
 }
 
+#tags {
+   text-align: center;
+}
+
+#tags p {
+   font-size: 2rem;
+   text-align: center;
+   background-color: black;
+   border-radius: 8px;
+   padding-top: 0.3em;
+   height: 2em;
+   color: white;
+   display: inline-block;
+}
+
 a:active, a:focus {
    outline: 0;
    border: none;
@@ -213,13 +232,17 @@ nav a, #navbar a {
    cursor: pointer;
 }
 
-#navbar p:hover {
+#navbar p:hover, #tags p:hover {
    cursor: pointer;
    color: gray;
 }
 
-nav a:hover, #navbar a:hover, nav a:link, #navbar a:link, nav a:visited, #navbar a:visited {
+nav a:hover, #navbar a:hover {
    color: gray;
+   text-decoration: none;
+}
+
+nav a:visited, #navbar a:visited {
    text-decoration: none;
 }
 
@@ -260,9 +283,20 @@ article {
    font-size: 1.7rem;
 }
 
-article h1 {
+.title a {
    font-family: "Roboto", Helvetica, sans-serif;
    font-size: 3.5rem;
+   text-decoration: none;
+   color: black;
+}
+
+.title a:hover {
+   color: gray;
+   text-decoration: none;
+}
+
+.title a:visited {
+   text-decoration: none;
 }
 
 .date {
@@ -319,6 +353,77 @@ article div h4 {
    margin-right: 2rem;
 }
 
+#prev {
+   float: left;
+}
+
+#next {
+   float: right;
+}
+
+#prev, #next {
+   font-size: 1.8rem;
+   padding-top: 5px;
+   height: 2em;
+   width: 8em;
+   color: white;
+   background-color: black;
+   text-align: center;
+   cursor: pointer;
+}
+
+#prev:hover, #next:hover {
+   background-color: gray;
+}
+
+#suggestions {
+   font-weight: bold;
+}
+
+#recommended {
+   margin-bottom: 10px;
+}
+
+.suggests {
+   height: 4em;
+   margin-bottom: 15px;
+   padding-top: 0.5em;
+   display: inline-block;
+}
+
+.suggests:hover {
+   opacity: 0.5;
+}
+
+.suggest-image {
+   height: 4em;
+   width: 6em;
+   margin-top: -0.5em;
+   float: left;
+   margin-right: 1em;
+}
+
+.suggest div {
+   float: right;
+   padding-left: 1em;
+}
+
+.suggest-title a {
+   font-size: 1.6rem;
+   font-weight: bold;
+   color: black;
+   text-decoration: none;
+}
+
+.suggest-title a:hover {
+   color: black;
+   text-decoration: none;
+}
+
+.suggest-title a:visited {
+   text-decoration: none;
+}
+
 .fb-share, .twitter-share, .google-share, .pinterest-share {
    border-radius: 50%;
    height: 3.5rem;
@@ -333,10 +438,13 @@ article div h4 {
    opacity: 0.7;
 }
 
-.sidebar {
+.sidebar, #tags, #suggestions {
    padding: 20px 20px 0px 20px;
-   background-color: white;
    font-size: 1.7rem;
+}
+
+.sidebar, #suggestions {
+   background-color: white;
    display: block;
 }
 
@@ -380,6 +488,11 @@ footer {
 footer .col-sm-8 {
    display: flex;
    justify-content: flex-end;
+}
+
+footer .col-sm-3 {
+   font-size: 14px;
+   padding-top: 7px;
 }
 
 footer ul {
@@ -474,10 +587,6 @@ footer li img:hover {
 
 /* content section */
 @media screen and (max-width: 634px) {
-   .sidebar {
-      margin-bottom: 40px;
-   }
-
    #dp {
       text-align: center;
    }
@@ -492,10 +601,6 @@ footer li img:hover {
 }
 
 @media screen and (min-width: 635px) and (max-width: 1200px) {
-   .sidebar {
-      margin-bottom: 40px;
-   }
-
    #profile {
       display: inline-block;
       margin-bottom: 0.5em;
@@ -515,6 +620,29 @@ footer li img:hover {
    }
 }
 
+@media screen and (max-width: 1200px) {
+   #prev, #next {
+      margin-bottom: 30px;
+   }
+
+   .sidebar, #tags, #suggestions {
+      margin-bottom: 40px;
+   }
+
+   #tags p {
+      width: 20%;
+   }
+
+   #suggestions {
+      margin-top: 35px;
+      clear: both;
+   }
+
+   .suggests {
+      width: 50%;
+   }
+}
+
 @media screen and (min-width: 1201px) {
    #main {
       float: left;
@@ -526,7 +654,11 @@ footer li img:hover {
       width: 95%;
    }
 
-   .sidebar {
+   #prev, #next {
+      margin-bottom: 50px;
+   }
+
+   .sidebar, #tags, #suggestions {
       float: right;
       width: 30%;
    }
@@ -541,5 +673,17 @@ footer li img:hover {
 
    #profile p {
       text-align: center;
+   }
+
+   #tags p {
+      width: 40%;
+   }
+
+   #next {
+      margin-right: 5%;
+   }
+
+   .suggests {
+      width: 100%;
    }
 }

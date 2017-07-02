@@ -5,6 +5,9 @@
          <a href="https://www.facebook.com/coal.chris" class="col-sm-4">Facebook</a>
          <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" class="col-sm-4">YouTube</a>
          <a href="/posts" scroll-to="#fb-root" class="col-sm-4">Posts</a>
+         <a href="https://www.facebook.com/coal.chris" class="col-sm-3">Facebook</a>
+         <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" class="col-sm-3">YouTube</a>
+         <a href="/posts" scroll-to="#fb-root" class="col-sm-3">Posts</a>
       </nav>
    </div>
 </header>
@@ -26,12 +29,16 @@
             <img class="pinterest-share" src="../img/pinterest-icon.png" socialshare socialshare-provider="pinterest" socialshare-url="https://thechristimes.herokuapp.com/posts/{{ article.id }}">
          </div>
       </article>
+      <a href="/posts/{{ prevId }}" ng-show="prevFound"><p id="prev">Previous</p></a>
+      <a href="/posts/{{ nextId }}" ng-show="nextFound"><p id="next">Next</p></a>
    </div>
-   <div class="sidebar">
-      <div id="suggestions">
-         <p>
-            Place suggested posts here!
-         </p>
+   <div id="suggestions">
+      <p id="recommended">Recommended</p>
+      <div class="suggests" ng-repeat="article in articles | filter: filterType | limitTo: 4">
+         <a href="/posts/{{ article.id }}" scroll-to="#fb-root"><img class="suggest-image" ng-src="{{ article.image }}"></a>
+         <div>
+            <p class="suggest-title"><a href="/posts/{{ article.id }}" scroll-to="#fb-root">{{ article.title }}</a></p>
+         </div>
       </div>
    </div>
 </section>
