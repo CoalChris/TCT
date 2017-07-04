@@ -348,7 +348,6 @@ article div {
 }
 
 article div h4 {
-   display: inline;
    font-weight: bold;
    margin-right: 2rem;
 }
@@ -509,18 +508,32 @@ footer li img:hover {
 }
 
 /* navbar display depending on device screen size */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 310px) {
+   nav .col-sm-3 {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 420px) {
+   #nav-yt {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 540px) {
+   #nav-fb {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 766px) {
    nav .col-sm-4 {
       display: none;
    }
 }
 
-@media screen and (min-width: 768px) {
-   #dropdown {
-      display: none;
-   }
-
-   nav .col-sm-3 {
+@media screen and (min-width: 767px) {
+   #dropdown, nav .col-sm-3 {
       display: none;
    }
 }
@@ -586,6 +599,18 @@ footer li img:hover {
 }
 
 /* content section */
+@media screen and (max-width: 400px) {
+   div article h4 {
+      display: block;
+   }
+}
+
+@media screen and (min-width: 401px) {
+   div article h4 {
+      display: inline;
+   }
+}
+
 @media screen and (max-width: 634px) {
    #dp {
       text-align: center;
@@ -597,6 +622,12 @@ footer li img:hover {
    
    #scroll-up {
       display: none;
+   }
+}
+
+@media screen and (max-width: 695px) {
+   .suggests {
+      width: 100%;
    }
 }
 
@@ -620,6 +651,12 @@ footer li img:hover {
    }
 }
 
+@media screen and (min-width: 696px) and (max-width: 1200px) {
+   .suggests {
+      width: 50%;
+   }
+}
+
 @media screen and (max-width: 1200px) {
    #prev, #next {
       margin-bottom: 30px;
@@ -636,10 +673,6 @@ footer li img:hover {
    #suggestions {
       margin-top: 35px;
       clear: both;
-   }
-
-   .suggests {
-      width: 50%;
    }
 }
 
