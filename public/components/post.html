@@ -8,20 +8,6 @@
          <a href="https://www.facebook.com/coal.chris" class="col-sm-3" id="nav-fb">Facebook</a>
          <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" class="col-sm-3" id="nav-yt">YouTube</a>
          <a href="/posts" scroll-to="#fb-root" class="col-sm-3">Posts</a>
-         <div class="col-sm-3" id="dropdown">
-            <div id="menu-btn" ng-class="{'open': isActive}" ng-click="showMenu = !showMenu; activate()">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-            <div id="dropdown-menu" ng-show="showMenu">
-               <a scroll-to="#posts-header" class="col-sm-2" ng-click="filter('travel')">Travels</a>
-               <a scroll-to="#posts-header" class="col-sm-2" ng-click="filter('food')">Food</a>
-               <a scroll-to="#posts-header" class="col-sm-2" ng-click="filter('anime')">Anime</a>
-               <a scroll-to="#posts-header" class="col-sm-2" ng-click="filter('religion')">Religion</a>
-            </div>
-         </div>
       </nav>
    </div>
 </header>
@@ -43,8 +29,8 @@
             <img class="pinterest-share" src="../img/pinterest-icon.png" socialshare socialshare-provider="pinterest" socialshare-url="https://thechristimes.herokuapp.com/posts/{{ article.id }}">
          </div>
       </article>
-      <a href="/posts/{{ prevId }}" ng-show="prevFound"><p id="prev">Previous</p></a>
-      <a href="/posts/{{ nextId }}" ng-show="nextFound"><p id="next">Next</p></a>
+      <a scroll-to="#posts-header" href="/posts/{{ prevId }}" ng-show="prevFound"><p id="prev">Previous</p></a>
+      <a scroll-to="#posts-header" href="/posts/{{ nextId }}" ng-show="nextFound"><p id="next">Next</p></a>
    </div>
    <div id="suggestions">
       <p id="recommended">Recommended</p>

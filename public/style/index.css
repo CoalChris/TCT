@@ -625,7 +625,7 @@ footer li img:hover {
    }
 }
 
-@media screen and (max-width: 695px) {
+@media screen and (max-width: 994px) {
    .suggests {
       width: 100%;
    }
@@ -651,7 +651,7 @@ footer li img:hover {
    }
 }
 
-@media screen and (min-width: 696px) and (max-width: 1200px) {
+@media screen and (min-width: 995px) and (max-width: 1200px) {
    .suggests {
       width: 50%;
    }
