@@ -1,0 +1,54 @@
+<header class="container-fluid">
+   <div class="row">
+      <h1 scroll-to="#fb-root" class="col-sm-2"><a href="/">TCT</a></h1>
+      <nav class="col-sm-12">
+         <a href="https://www.facebook.com/coal.chris" class="col-sm-2">Facebook</a>
+         <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" class="col-sm-2">YouTube</a>
+         <a href="/jet" scroll-to="#fb-root" class="col-sm-2">JET</a>
+         <a href="/posts" scroll-to="#fb-root" class="col-sm-2">Posts</a>
+         <a href="https://www.facebook.com/coal.chris" class="col-sm-3" id="nav-fb">Facebook</a>
+         <a href="https://www.youtube.com/channel/UCf9J4CNaeTISEJAm-nR-nmg" class="col-sm-3" id="nav-yt">YouTube</a>
+         <a href="/posts" scroll-to="#fb-root" class="col-sm-3">Posts</a>
+         <div class="col-sm-3" id="dropdown">
+            <div id="menu-btn" ng-class="{'open': isActive}" ng-click="showMenu = !showMenu; activate()">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div id="dropdown-menu" ng-show="showMenu">
+               <a scroll-to="#posts" class="col-sm-2" href="/jet">JET</a>
+            </div>
+         </div>
+      </nav>
+   </div>
+</header>
+<div id="posts-header"></div>
+<section class="container" id="content">
+   <div id="main">
+      <div id="scroll-to"></div>
+      <article>
+         <h1 class="title">The JET Programme</h1>
+         <img class="image" src="../img/jet.jpg">
+         <p class="text">The Japan Exchange and Teaching (JET) Programme is a Japanese government-run initative which recruits proficient, and often native, English speakers from across the world. Placing these foreigners in schools, boards of education or even local government offices, the aim is to provide cross-cultural exchange for both Japanese students and JET Programme participants (otherwise known as JETs). There are currently almost 5,000 JETs actively working in Japan, and many more JET alumni working for the Japanese government or embassies back in their home countries. The majority of JETs work as Assistant Language Teachers (ALTs) to make the most of their English proficiency. However, some JETs work as Coordinators for International Relations (CIRs) and primarily translate for government officials, teaching communities, and promote international exchange events. There is a third category of JETs who are Sports Exchange Advisors (SEAs), but their role is to assist in sports training and event planning, and thus require recommendation as sports professionals from national Olympic commitees or other related government organisations. Cultural exchange doesn't just stop at work, but continues in all aspects of living in Japan and being a part of the local community. Japanese classes, social clubs and festivals are just a few ways in which JETs are expected to embrace their new environment.</p>
+         <p class="text">The life of a JET isn't actually too bad. JETs are paid a decent salary, at approximately 3.3 million yen ($39,000 AUD) per year. There should be no reason a JET cannot survive and thrive in Japan, even after paying the bills. Furthermore, the main organisation administering for the JET Programme, Council of Local Authorities for International Relations (CLAIR), provides continuous support for JETs. Conferences, training, publications, resources, and even career support coming out of JET are at your disposal. There are often CIRs in your city or prefecture who can also help. The support network is huge! Not only that, but CLAIR also understands the needs of JETs and have created special interest groups for like-minded JETs to plan, gather and have fun together. It's like going back to college again!</p>
+         <p class="text">The best part of the JET Programme is that the only requirement for applying (excl. SEAs) is having obtained a Bachelor's degree in ANYTHING! Graduated from Commerce? Physics? Engineering? Fine Arts? That's perfect! Anyone who is keen to live and work in Japan has a shot. Do you have what it takes to promote internationalisation in Japan? <a href="http://jetprogramme.org/en/">More information on the JET Programme can be found on their website.</a></p>
+         <div class="row text-right">
+            <h4><p></p>SHARE</h4>
+            <img class="fb-share" src="../img/facebook-icon.png" socialshare socialshare-provider="facebook" socialshare-type="share" socialshare-via="100846010551968" socialshare-url="https://thechristimes.herokuapp.com/jet">
+            <img class="twitter-share" src="../img/twitter-icon.png" socialshare socialshare-provider="twitter" socialshare-url="https://thechristimes.herokuapp.com/jet">
+            <img class="google-share" src="../img/google-icon.png" socialshare socialshare-provider="google" socialshare-url="https://thechristimes.herokuapp.com/jet">
+            <img class="pinterest-share" src="../img/pinterest-icon.png" socialshare socialshare-provider="pinterest" socialshare-url="https://thechristimes.herokuapp.com/jet">
+         </div>
+      </article>
+   </div>
+   <div id="suggestions">
+      <p id="recommended">Related</p>
+      <div class="suggests" ng-repeat="article in articles | filter: filterJet | limitTo: 4">
+         <a href="/posts/{{ article.id }}" scroll-to="#fb-root"><img class="suggest-image" ng-src="{{ article.image }}"></a>
+         <div>
+            <p class="suggest-title"><a href="/posts/{{ article.id }}" scroll-to="#fb-root">{{ article.title }}</a></p>
+         </div>
+      </div>
+   </div>
+</section>

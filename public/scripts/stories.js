@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 17,
+         title: "JET Programme | What's coming?",
+         image: "../img/tokushima-map.jpg",
+         date: "13 July 2017",
+         tag: "jet tokushima",
+         blurb: "In just over a week, I'll be heading out of Sydney for my year of work as an English language teacher in Japan. I'll be living in a city called Tokushima City, off the mainland and far from the rest of the cities familiar to the average Westerner. What's there to do? What's happening when I get there? What's coming?",
+         text: "If you haven't heard of the JET Programme before, you can read about the details over on my <a href=\"https://thechristimes.herokuapp.com/jet\">JET page</a>.<br><br>The game plan at this point is to spend a year on JET, and possibly look at contract renewal if Tokushima is a worthwhile place to stay and work. It's quite a big city (population on par with Gold Coast, Australia), but sadly it'll take roughly 3 hours by bus to reach the closest metropolis, Osaka. That means a trip to the Japanese mainland will take up half a day already. Yuck! This is definitely not the time to be visiting those normal tourist-y places, but rather an opportunity to explore the vast region of Shikoku, the main island which Tokushima is a piece of. Mountain roads, elevated bridges connecting islands, dusty old streets in long forgotten villages, there is an incredible amount of cycling fun to be had on Shikoku! Even within Tokushima City, there are festivals and markets bustling with excitement. My list of things to do is essentially inexhaustible.<br><br>How will the everyday life look though? Well work is going to be language teaching at a high school, years 7 through to 11, and possibly 12. Accomodation is sorted at a nearby apartment, all to myself! Cooking is going to be a new concept, but restaurants, or even Seven-Eleven rice balls are always a welcome option. Churches are scarce in Japan (excl. Catholic), but I've had some very nice JET Christians plug me in with some contacts. Everything sounds sorted, but there's actually so much left behind the scenes. Phone and Internet plans, utility bills, bank accounts. Transitioning into a different country and carrying the burdens of responsibility and independence is absolutely insane. To top it off, I can only bring a single checked-baggage of 20kg with me lest I incur the wrath of extra baggage penalties or baggage shipping costs. Honestly, I've decided just to bring resources for work, souvenirs to greet people, and a basic amount of attire to last me the week after arriving in Japan. What better way to keep luggage to a minimum than scrapping anything not absolutely required? If I can buy it in Japan, I don't need to bring it. I've survived in Japan on half a checked-baggage, I can do it again on a third. That is, as long as I bring my debit card to raid Uniqlo and stock up that new wardrobe.<br><br>I don't know how things will turn out until I get there. Who will I meet? What problems are going to pop up on arrival or during work? But those things will sort themselves out. From one of my favourite passages in the Bible, \"...tomorrow will worry about itself\" Matthew 6:34. What's more worrying is my limited time left here in Sydney. I kept telling myself \"I have time, I have plenty of time\", but recently I've wasted so many hours trying to fix up a sudden development of insomnia. I've been hanging out with each of my closest groups of friends every day or two. And yet there's still so much to do and not enough time. Right now I want to tell my future self, don't waste your days over in Japan either. They're going to fly by real fast, and then you're going to regret not being a bigger part of the local community, the school, and more importantly the lives of those people close to you.<br><br>To my friends in Sydney, it's been a pleasure having you guys all these years. Please keep in touch over Facebook, WhatsApp, or even Skype!<br><br><b>Tokushima, I'm coming for you.</b>"
+      },
+      {
          id: 16,
          title: "Christian Dating | Recovering",
          image: "../img/break-up.jpg",
@@ -207,6 +216,12 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
          return true;
       } else {
          return false;
+      }
+   }
+
+   $scope.filterJet = function(story) {
+      if (story.tag.indexOf('jet') !== -1) {
+         return true;
       }
    }
 

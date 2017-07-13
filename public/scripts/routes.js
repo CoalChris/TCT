@@ -16,6 +16,12 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
       .when('/posts/:id', {
          templateUrl: '../components/post.html',
          controller: 'stories'
+      })
+
+      // JET page
+      .when('/jet', {
+         templateUrl: '../components/jet.html',
+         controller: 'stories'
       });
 
       // Remember routing history

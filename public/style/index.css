@@ -526,13 +526,13 @@ footer li img:hover {
    }
 }
 
-@media screen and (max-width: 766px) {
-   nav .col-sm-4 {
+@media screen and (max-width: 768px) {
+   nav .col-sm-2 {
       display: none;
    }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 769px) {
    #dropdown, nav .col-sm-3 {
       display: none;
    }
@@ -631,6 +631,18 @@ footer li img:hover {
    }
 }
 
+@media screen and (max-width: 540px) {
+   #tags p {
+      width: 40%;
+   }
+}
+
+@media screen and (min-width: 541px) and (max-width: 1200px) {
+   #tags p {
+      width: 20%;
+   }
+}
+
 @media screen and (min-width: 635px) and (max-width: 1200px) {
    #profile {
       display: inline-block;
@@ -664,10 +676,6 @@ footer li img:hover {
 
    .sidebar, #tags, #suggestions {
       margin-bottom: 40px;
-   }
-
-   #tags p {
-      width: 20%;
    }
 
    #suggestions {
