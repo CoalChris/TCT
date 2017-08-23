@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 19,
+         title: "Gaijin Asian Takes Full Brunt of Waitress' Japanese",
+         image: "../img/waitress.jpg",
+         date: "23 August 2017",
+         tag: "japan culture jet gaijin asian japanese",
+         blurb: "Witnesses confirmed yesterday that newly recruited assistant language teacher (ALT), Cameron Lee, was bombarded by a flurry of Japanese sentences upon entering a local cafe despite being unable to speak a single word of Japanese other than 'Hai' and 'Sumimasen'. It is reported that his fellow assistant language-teaching colleagues of European descent were having an obnoxiously loud conversation in fluent Japanese as they stood at the door, but the waitress persisted in her attempt at communicating with the baffled ALT.",
+         text: "\"My buddy, Ryan, walked in first, but as soon as the waitress saw me, her gaze was fixed on me\", said Mr. Lee. \"It was as if I had a big red target on my forehead.\"<br><br>\"I told her that my friends could handle the seating and our orders, but she just glanced over at the group of caucasians and back to me, possibly expecting that I had suddenly become a Japanese proficiency master within the last two seconds.\"<br><br>Mr. Lee informed us that after a minute of pointing, waving and acrobatics, the waitress lost interest and directed them to an empty table. His friends tried to order some karaage, sliders and siphon coffee, but apparently the waitress ignored them and turned to Mr. Lee, waiting for his magic finger to hover over the menu items.<br><br>\"This isn't the first time it's happened.\"<br><br>Sources contacted us today regarding an incident where Mr. Lee had to pay for Ryan's groceries because the clerk refused to believe the Westerner could understand the yen symbol on the LED screen."
+      },
+      {
          id: 18,
          title: "The Season of Festivals",
          image: "../img/festival.jpg",
