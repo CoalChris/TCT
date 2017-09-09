@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 20,
+         title: "Teacher Celebrates First Student Response Milestone",
+         image: "../img/class-answer.JPG",
+         date: "9 September 2017",
+         tag: "japan culture jet school japanese teaching student",
+         blurb: "This Wednesday, students gazed upon the double thumbs up in all its awesomeness for the first time. The event was triggered when second grade junior high school student, Yuki Nakamura, mustered up his courage and answered Nyugen-sensei's question.",
+         text: "\"It wasn't a particularly difficult question\", said Nyugen-sensei. \"As a teacher, I want to let my students build up their confidence by answering simple questions and gradually moving on to more difficult problems. For the last week or so, no student has managed to answer a single question, but I knew they could do it eventually. This time was different, I could feel it in my gut before the words even came out of my mouth. This time, I was going to get a response. I showed them a picture of a cat, and asked 'what is this animal?'\"<br><br>We inquired about the incident with Mr. Nakamura. What were his thoughts leading up to this incredible breakthrough?<br><br>\"It definitely wasn't a difficult question, and had probably been in a few of my elementary school tests. Nyugen-sensei has asked many easy questions in class, but I never gave an answer because I hadn't discussed with my classmates yet. Who knows if it's a trick question? Or maybe the Australian spelling is different?\"<br><br>\"In the past, the answer in my head was always the answer Nyugen-sensei revealed after a minute of waiting for our responses. This time, I thought to myself 'What the heck, let's give it a shot' and confidently muttered the answer under my breath. Sensei didn't hear me clearly the first time, so I had to repeat myself louder after he pointed at me. How embarassing!\"<br><br>Another student pointed out, \"We wouldn't be in this predicament if Nyugen-sensei had just written the answer on the board. Who needs to answer questions when you can just memorise information in class?\"<br><br>\"I do respect Nakamura-kun for risking his perfect 0 out of 0 correct response rate. Imagine getting an answer wrong and looking like a complete loser! I could never take that risk.\"<br><br>\"I'm just hoping that I'll get more responses from now on,\" said Nyugen-sensei.<br><br>It was reported that Nyugen-sensei's question \"Who likes soccer?\" was met with silence today."
+      },
+      {
          id: 19,
          title: "Gaijin Asian Takes Full Brunt of Waitress' Japanese",
          image: "../img/waitress.jpg",
