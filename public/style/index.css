@@ -341,8 +341,10 @@ article {
 
 .text img {
    display: block;
+   width: 85%;
    margin-left: auto;
    margin-right: auto;
+   border-radius: 5px;
 }
 
 .text.ng-hide {
