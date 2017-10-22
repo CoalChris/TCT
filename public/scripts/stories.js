@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 25,
+         title: "Japan Faces Indefinite Shut-In Season",
+         image: "../img/japan-rain.jpg",
+         date: "22 October 2017",
+         tag: "disaster natural rain japan jet satire",
+         blurb: "It has been reported that the Japanese government is planning on holding a new campaign to promote the transition of its iconic phrase from 'Land of the Rising Sun' to 'Land of the Rising Precipitation'. This comes as a result of weeks of torrential rain forcing Japanese residents to stay at home. \"We don't want to give foreigners a misconception of our country anymore. They come here expecting to climb Mount Fuji, but in reality they're cooped up in Starbucks waiting for the storm to let up\", President Abe shamefully admitted in a press conference on Monday.",
+         text: "We reached out to our resident <i>gaijin</i>, Nguyen-sensei, for comment on the proposal.<br><br>\"It's about time that the authorities did something about the image of Japan in foreign countries\", says Mr. Nguyen. \"As foreigners, we think Japan is this beautiful place where we can flaunt our fashion sense in Harajuku, or gaze at ancient temples while relaxing in outdoor hot springs in Kansai. That was in the good ol' days of the rising sun. Now, the sun doesn't even appear at all!\"<br><br>\"My colleagues always decline my invitations to go cycling on the weekends. At first, I believed their claims of being tired or needing to do household chores, but now I've realised it's because it just rains every weekend. I'd hate for any other aspiring foreign workers to make the same mistake of hoping to go out exploring on their off-duty days.\"<br><br>\"Mr. Abe definitely has my vote in the upcoming elections\", Mr. Nguyen added, despite having no rights to cast a vote for the 2017 general elections.<br><br>As the third typhoon to hit Japan since August comes crashing down upon us, the number of shut-ins are expected to soar up, likely to continue increasing until the end of the rainy season in July 2018. Researchers claim that numbers will probably drop briefly before rising again due to the fact that it is too hot to go outside in summer."
+      },
+      {
          id: 24,
          title: "Hard Worker by Day, Heavy Drinker by Night",
          image: "../img/izakaya.jpg",
