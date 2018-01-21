@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 29,
+         title: "Chris Answers JET-Related Questions",
+         image: "../img/questions.jpg",
+         date: "21 January 2018",
+         tag: "jet application questions faq",
+         blurb: "A brand new sparkly FAQ page has been set up for the JET Programme!",
+         text: "I've been asked many questions regarding the JET Programme's application process and actually being in Japan. I figured it'd be helpful if I shed some light on these areas which aren't so transparent. If you're thinking of applying or wondering how things work as an employee in Japan, in particular for high school teachers, then definitely check this out!<br><br><a href=\"https://thechristimes.herokuapp.com/jet/faq\">Take me to the JET FAQ now!</a>"
+      },
+      {
          id: 28,
          title: "Punctuality is Law",
          image: "../img/train-departs.jpg",
@@ -319,6 +328,9 @@ app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", func
    }
 
    $scope.filterJet = function(story) {
+      $scope.$parent.seo = {
+         pageTitle: "The JET Programme"
+      };
       if ((story.tag.indexOf('application') !== -1) && (story.tag.indexOf('jet') !== -1)) {
          return true;
       }

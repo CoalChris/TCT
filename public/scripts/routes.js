@@ -22,6 +22,12 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
       .when('/jet', {
          templateUrl: '../components/jet.html',
          controller: 'stories'
+      })
+
+      // JET FAQ page
+      .when('/jet/faq', {
+         templateUrl: '../components/jetfaq.html',
+         controller: 'stories'
       });
 
       // Remember routing history
