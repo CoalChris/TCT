@@ -1,13 +1,22 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 30,
+         title: "Inescapable Prison of Dotonbori",
+         image: "../img/dotonbori.jpg",
+         date: "13 February 2018",
+         tag: "osaka food dotonbori japan jet satire",
+         blurb: "Emergency services were called to Osaka's dining and entertainment hub, Dotonbori, yesterday as yet another visitor became a victim of the seemingly inescapable tourist hotspot. This incident occurs shortly after another young couple had to be rescued by the Osaka Metropolitan Police last Friday.",
+         text: "Jimmy Ng, 26, was wandering the streets of Osaka when he realised he'd passed the same spot several times within the same day. After attempting to leave the vicinity, he found himself back at the Glico Man neon sign, where he'd started. Quickly becoming quite anxious and worried for his safety, he dialled 110 and waited in fetal position to be escorted home by police.<br><br>\"I recall arriving at Namba Station and heading over to Dotonbori for lunch at a sushi bar called Daikisuisan\", said a frightened Mr. Ng, \"and by then, I'd already been drawn right into the clutches of this terrifying beast.\"<br><br>Mr. Ng's eyes darted left and right, as if he were checking to make sure nothing was after him before continuing.<br><br>\"I did some shopping at Shinsaibashi since my friends had recommended that shopping arcade. When I'd made my rounds at all the stores, I was somehow back at the river where Glico Man is. Not thinking too much about it, I went and tried some street food at some of the stalls. Crab, Kobe beef, takoyaki, even some melon bread. I thought I'd also try the acclaimed Pablo cheese tarts, but when I was approaching the store front, I noticed something strange. No more than two hundred metres away from me was Glico Man. I knew something was up, so I bolted out of there. I didn't stop to think. My instincts told me to get out of there as soon as possible. I ran back to Namba, took the subway to Nipponbashi and got off there to continue my adventure in Osaka. I followed the shops along the street for a good hour or so. There were some cool Japanese sweets and souvenirs for sale, so I was quite immersed in what the shops had to offer. But then I looked around me, and to my horror, I'd magically been transported back to the streets of Dotonbori. Glico Man was just across the river, mocking me with his arms poised up and cheery smile. It was just like a scene from the Matrix, a dimension I was trapped in. A labyrinth of delicious food and glowing neon signs.\"<br><br>Mr. Ng refused to guide us through the route he took yesterday when we enquired.<br><br>\"I'd sooner be sent to the shadow realm than return to that hellish nightmare of a place.\""
+      },
+      {
          id: 29,
          title: "Chris Answers JET-Related Questions",
          image: "../img/questions.jpg",
          date: "21 January 2018",
          tag: "jet application questions faq",
          blurb: "A brand new sparkly FAQ page has been set up for the JET Programme!",
-         text: "I've been asked many questions regarding the JET Programme's application process and actually being in Japan. I figured it'd be helpful if I shed some light on these areas which aren't so transparent. If you're thinking of applying or wondering how things work as an employee in Japan, in particular for high school teachers, then definitely check this out!<br><br><a href=\"https://thechristimes.herokuapp.com/jet/faq\">Take me to the JET FAQ now!</a>"
+         text: "I've been asked many questions regarding the JET Programme's application process and actually being in Japan. I figured it'd be helpful if I shed some light on these areas which aren't so transparent. If you're thinking of applying or wondering how things work as an employee in Japan, in particular for high school teachers, then definitely check this out!<br><br><a href=\"/jet/faq\">Take me to the JET FAQ now!</a>"
       },
       {
          id: 28,
