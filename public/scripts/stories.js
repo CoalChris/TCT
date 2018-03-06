@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 31,
+         title: "The Discipline of Bowing",
+         image: "../img/students-bowing.jpg",
+         date: "6 March 2018",
+         tag: "graduation school bowing ceremony japan jet satire",
+         blurb: "Yuichiro Nakamura, principal of Kitami Technical High School, has recently announced that bowing will now be included in the school curriculum and official school examinations. Mr. Nakamura's statement, posted on the school website and notice boards, comes shortly after this year's graduation ceremony where students were required to repeatedly execute perfect cycles of standing, bowing and sitting.",
+         text: "\"It was like a game where we just kept getting up, bending our backs and sitting back down, but there was a lot of pressure since it was for our graduation\", mentioned a graduate who prefers to remain anonymous. \"I heard from some alumni that a girl who mistakenly stood up at the wrong time during last year's ceremony had her first preference university recommendation withdrawn\", she recalled with a shudder.<br><br>\"We had been discussing about the possibility for years, but it was only now that we had the resources and enough support from parents and our alumni association\", said Mr. Nakamura during an interview on Monday. \"The students are using, and will continue to use, this life skill in their daily lives. It's only natural that we teach them everything from the fundamentals all the way to advanced techniques, and most importantly assess their learning in an exam environment.\"<br><br>The United Nations Educational, Scientific and Cultural Organisation (UNESCO) defines bowing as \"an integral part of Japanese culture\". The nation of Japan is built on a history of performing this swift, but rigid, action. In 2017, a nation-wide survey conducted by the Ministry of Education, Culture, Sports, Science and Technology (MEXT) found that Japanese citizens bowed an average of 21.7 times a day. One or two of these were solid bows nearing the forty-five degree mark, while up to fifteen were just simple head nods.<br><br>Mr. Nakamura expresses that he hopes to incorporate new angle-measuring technology for assessing the accuracy of each bow in classrooms by 2020. He also adds that standing and sitting will appear in the curriculum alongside their complementary ceremonial procedure of bowing."
+      },
+      {
          id: 30,
          title: "Inescapable Prison of Dotonbori",
          image: "../img/dotonbori.jpg",
