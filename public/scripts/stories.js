@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 32,
+         title: "JET Programme | Shortlisted Candidates",
+         image: "../img/shortlist.png",
+         date: "30 March 2018",
+         tag: "jet application questions faq success shortlist accepted offer",
+         blurb: "Congratulations to all JET Programme applicants who made it! By this time next year, you'll be wearing a kimono and sipping on Japanese green tea on a tatami mat thinking back at how smart you were making this huge life decision. But only if you decided to take some annual leave and visit Kyoto during spring break. This old and wise JET decided to stay at school and practice Japanese, study the lyrics to the entire ONE OK ROCK Ambitions album, and of course write some juicy posts... minus the juicy. Although, I'll admit I do regret not being served by a 9th Dan tea master in an authentic tea house.",
+         text: "Just to clarify, there are two shortlists for JET: the regular shortlist which means you're accepted but if a contracting organisation such as a school or Board of Education pulls out then you might be the unlucky one who gets dropped, and the alternate shortlist which means you're upgraded to accepted status if someone declines the offer or there are more contracting organisations than accepted applicants. For anyone else, tough luck. Better luck next year. You can also check out the <a href=\"/jet/faq\">FAQ</a> to see other options available!<br><br>So you've been accepted. Now what? You should've received instructions to submit documents for your visa, along with handing in those tedious medical and police check forms to the embassy if you haven't already. Then you need to plan out how you'll enjoy your remaining few months with friends and family, and how you'll prepare for moving to Japan. For me, this meant buying a new camera to capture moments which I could print and bring to Japan and show people. Other things to consider include exchanging at least 80,000 yen for surviving the first month in Japan, closing your unnecessary bank accounts, getting an international driver's licence if you plan on renting a car for holidays or going Mario Karting, cancelling your household utilities, phone and internet plans, and filing your tax.<br><br>There's a lot to get done, but you should still have heaps of time to hang out and say your farewells. Personally, I spent my weekdays studying web-development and ended up making this website. Surprisingly productive, right? Don't worry, all the solemn goodbyes were said in the last week or two before departure.<br><br>That's all for now. Congratulations again, and see you in Japan! But until then, <i>sayonara</i>!"
+      },
+      {
          id: 31,
          title: "The Discipline of Bowing",
          image: "../img/students-bowing.jpg",
