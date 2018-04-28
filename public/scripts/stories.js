@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 34,
+         title: "Facebook Patents Brainwashing Technology",
+         image: "../img/facebook-scandal.jpg",
+         date: "28 April 2018",
+         tag: "social media facebook scandal news technology satire",
+         blurb: "In the midst of investigations into the tech-giant's policies as a result of the Cambridge Analytica scandal, Facebook announced at a press conference on Friday that they have patented and are launching a new brainwashing service available to all its users for free, and it's not optional. \"We hope that this will solve the problem of Facebook partners abusing the data we provide to them\", said CEO and co-founder of Facebook, Mark Zuckerberg.",
+         text: "\"Our users trust that the personal details and information they provide to us, or even our partner's apps, are securely stored on our servers and not given to third parties without prior consent. According to Facebook's terms and conditions, we give some businesses access to some of this data in order to provide the best advertising experience for our users, and to keep the company running on ad revenue. However, since no one bothers to read or abide by our policies, we need to ensure even greater levels of protection for our users' data. Instead of allowing these businesses to target ads which might sway your vote in an election, we've decided to do away with data exchanges and go with an in-house tool to brainwash you. You can rest assured that your data is kept safe and secure with us. Facebook's revenue will now largely come from the sales generated through this new feature.\"<br><br>\"This was an opportunity to change our business model, as Congress Representative Anna Eshoo suggested, and I really need to thank her\", he added with a laugh.<br><br>The news has received very positive responses, with hundreds of thousands of tweets on social platform Twitter praising the changes. One woman wrote, \"Now I can answer those <i>Which Marvel Hero Are You</i> quizzes without worrying that I'll get ads of Donald Trump as Captain America appearing on my news feed. Losing my ability to resist Facebook's demands is a small price to pay for secure data #blessed #makefacebookgreatagain\".<br><br>Facebook released a promo on their official page earlier today hinting that their first wave of brainwashing ads will try to get more Americans eating at McDonald's rather than Chick-fil-A."
+      },
+      {
          id: 33,
          title: "Understanding Japanese Concerts ft. ONE OK ROCK",
          image: "../img/oneokrock-ambitions-dome-osaka.jpg",
