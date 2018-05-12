@@ -1,6 +1,15 @@
 app.controller("stories", ["$scope", "$timeout", "$routeParams", "$window", function($scope, $timeout, $routeParams, $window) {
    $scope.articles = [ 
       {
+         id: 35,
+         title: "Unidentified Weapon Wipes Memories Of Thousands",
+         image: "../img/student-thinking.jpg",
+         date: "12 May 2018",
+         tag: "teaching student school japan jet satire",
+         blurb: "Schools across Japan have been put on high alert after authorities confirmed hundreds of reports were filed regarding memory loss in schools, particularly junior and senior high schools.",
+         text: "The largest set of closely grouped public holidays in Japan, Golden Week, spanned from April 29 until May 5. In the week following, teachers have noticed a strangely high number of students unable to recollect their memories of enjoyable times during the holiday season.<br><br>Nicholas White, third year Assistant Language Teacher at Kibidango East High School in Okayama Prefecture, recalled, \"I walked into class bringing all my enthusiasm after a week of relaxing in <i>onsen</i> and chugging down Strong Zero's. But when I asked the students what they did, it was met with silence and blank stares. I pointed at one of the girls in the front row and after a frustrating minute of serious thinking, she managed to tell the class that she'd slept during Golden Week. The same thing happened in my other 13 classes this week.\"<br><br>Similar reports indicate this memory wipe has occurred in at least 41 of the other 46 prefectures of Japan. Investigators are unsure as to the nature of the phenomenon, but have suggested this may have been a chemical weapon prototype being developed and tested by Syria. \"What makes these incidents extra frightening is that no traces of the chemical attack can be found\", says Council for National Security & Counter-Terrorism president Kei Satsuda.<br><br>Donald Trump, Theresa May and Emmanuel Macron have pledged to support Japan if allegations against Syria are found to be true."
+      },
+      {
          id: 34,
          title: "Facebook Patents Brainwashing Technology",
          image: "../img/facebook-scandal.jpg",
