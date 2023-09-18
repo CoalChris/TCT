@@ -49,6 +49,7 @@ Temporary Items
 # Node modules
 node_modules/
 .bin/
+package-lock.json
 
 # Logs
 logs
